@@ -12,6 +12,7 @@ body {
   line-height: 1.5;
   background: url(../image/flag.jpg) center / cover no-repeat;
   min-height: 100vh;
+  padding: 20px;
 }
 
 #search-box {
@@ -23,4 +24,22 @@ body {
 
 ul {
   list-style: none;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+img {
+  margin-right: 10px;
+}
+
+li {
+  font-size: 18px;
+  font-weight: 500;
 }
