@@ -7,9 +7,11 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  color: #212121;
+  background-color: black;
+  color: white;
   line-height: 1.5;
+  background: url(../image/flag.jpg) center / cover no-repeat;
+  min-height: 100vh;
 }
 
 #search-box {
@@ -17,4 +19,8 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+
+ul {
+  list-style: none;
 }
