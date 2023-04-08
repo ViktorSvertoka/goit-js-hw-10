@@ -9,10 +9,10 @@ const searchEl = document.querySelector('#search-box');
 const countryInfo = document.querySelector('.country-info');
 const countryList = document.querySelector('.country-list');
 
-const cleanMarkup = ref => (ref.innerHTML = '');
+const cleanMarkup = reference => (reference.innerHTML = '');
 
-const inputHandler = e => {
-  const textInput = e.target.value.trim();
+const inputHandler = element => {
+  const textInput = element.target.value.trim();
 
   if (!textInput) {
     cleanMarkup(countryList);
@@ -31,7 +31,7 @@ const inputHandler = e => {
       }
       renderMarkup(data);
     })
-    .catch(err => {
+    .catch(error => {
       cleanMarkup(countryList);
       cleanMarkup(countryInfo);
       Notify.failure('Oops, there is no country with that name');
